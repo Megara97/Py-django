@@ -8,4 +8,4 @@ Instrucciones:
  --> curl localhost:3000 o curl http://127.0.0.1:3000
  --> curl localhost:3000/encuesta/ o curl http://127.0.0.1:3000/encuesta/ 
  --> curl localhost:3000/admin/login/?next=/admin/ o curl http://127.0.0.1:3000/admin/login/?next=/admin/ 
-4. Salid de bash (exit) y detener el contenedor (docker stop development_server)
+4. Salir de bash (exit) y detener el contenedor (docker stop development_server)
