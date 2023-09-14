@@ -1,0 +1,11 @@
+Instrucciones:
+0. [HECHO] Entrar a directorio (cd Py-django) y Crear la imagen prueba_mag:0.3 con el Dockerfile (docker build -t prueba_mag:0.3 .)
+1. Crear contenedor con la imagen prueba_mag:0.3 (docker run --name development_server -p 3000:3000 prueba_mag:0.3)
+2. Ingresar en el navegador web a la dirección http://127.0.0.1:3000
+--Si da mensaje de error "Esta página no funciona" probar directamente en el contenedor con:
+2. Ejecutar bash en el contenedor en otro shell (docker exec -it development_server bash)
+3. Ver las ventanas del servidor de desarrollo con curl 
+ --> curl localhost:3000 o curl http://127.0.0.1:3000
+ --> curl localhost:3000/encuesta/ o curl http://127.0.0.1:3000/encuesta/ 
+ --> curl localhost:3000/admin/login/?next=/admin/ o curl http://127.0.0.1:3000/admin/login/?next=/admin/ 
+4. Salid de bash (exit) y detener el contenedor (docker stop development_server)
